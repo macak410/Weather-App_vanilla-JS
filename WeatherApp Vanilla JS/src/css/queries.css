@@ -1,0 +1,7 @@
+:root {
+  --ff-headings: "Montserrat", sans-serif;
+  --ff-paragraph: "Karla", sans-serif;
+
+  --clr-black: hsl(170, 11%, 11%);
+  --clr-white: hsl(31, 37%, 89%);
+}

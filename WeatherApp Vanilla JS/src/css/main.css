@@ -1,0 +1,23 @@
+:root {
+  --ff-headings: "Montserrat", sans-serif;
+  --ff-paragraph: "Karla", sans-serif;
+
+  --clr-black: hsl(170, 11%, 11%);
+  --clr-white: hsl(31, 37%, 89%);
+  --clr-white-regular: rgb(255, 255, 255);
+}
+
+/* ************************** */
+/* GENERAL */
+/* ************************** */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-paragraph);
+  font-size: 1.8rem;
+
+  color: var(--clr-white);
+}
