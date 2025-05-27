@@ -5,3 +5,99 @@
   --clr-black: hsl(170, 11%, 11%);
   --clr-white: hsl(31, 37%, 89%);
 }
+
+/* BELOW 1344px = 84em */
+@media (max-width: 84em) {
+  .main-weather-description {
+    padding: 4rem;
+  }
+
+  .single-day-weather {
+    padding: 1rem;
+  }
+}
+
+/* BELOW 1200px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container-main {
+    max-width: 100%;
+  }
+}
+
+/* BELOW 944px = 59em */
+@media (max-width: 59em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .container {
+    grid-template-columns: 6fr 6fr;
+  }
+
+  .container-main {
+    gap: 4rem;
+  }
+
+  .main-weather-description {
+    padding: 2rem;
+  }
+
+  .temps-humidity-wind {
+    flex-direction: column;
+  }
+
+  .weather-desc-and-minmax {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .forecast-days-weather {
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+
+  .search-form button {
+    top: 6px;
+    right: 10px;
+  }
+}
+
+/* BELOW 704px = 44em */
+@media (max-width: 44em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .container-main {
+    padding: 2rem;
+  }
+
+  .minmax-temp {
+    color: var(--clr-black);
+  }
+
+  .location {
+    margin-top: 5rem;
+  }
+}
+
+/* BELOW 544px = 34em */
+@media (max-width: 34em) {
+  .container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .search-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .location {
+    margin-top: 20rem;
+  }
+}

@@ -21,3 +21,278 @@ body {
 
   color: var(--clr-white);
 }
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  min-height: 100vh;
+}
+
+.aside {
+  background-color: var(--clr-black);
+  text-align: center;
+  padding: 4rem;
+
+  position: relative;
+}
+
+.heading-h2 {
+  font-family: var(--ff-headings);
+
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.search-form {
+  position: relative;
+}
+
+.spinner {
+  color: var(--clr-white);
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.search {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 6rem;
+  padding: 0 2rem;
+
+  min-height: 6rem;
+  width: 100%;
+}
+
+.search::placeholder {
+  color: rgba(237, 227, 217, 0.6);
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.search-form button svg {
+  width: 32px;
+  height: 32px;
+  box-shadow: none;
+
+  color: var(--clr-white);
+}
+
+.weather-degree-wrapper {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.weather-degree-wrapper select {
+  width: 100%;
+  padding: 1.4rem 2rem;
+  border-radius: 60px;
+  border: none;
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--clr-white);
+}
+
+.weather-degree-wrapper select option {
+  color: var(--clr-black);
+}
+
+.date-today {
+  margin: 2rem 0 5rem 0;
+  color: var(--clr-white);
+}
+
+.min-max-temp {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+}
+
+.humidity-and-wind {
+  font-size: 2.2rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.humidity-and-wind--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.humidity-and-wind--wrapper svg {
+  width: 4rem;
+  height: 4rem;
+  color: var(--clr-white);
+}
+
+.wind path {
+  fill: var(--clr-white);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 35rem;
+  margin-bottom: 4rem;
+}
+
+.location svg {
+  width: 3rem;
+  height: 3rem;
+
+  color: var(--clr-white);
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.4rem;
+}
+
+/***********************/
+/* MAIN CONTENT STYLES */
+
+.main-content {
+  background-image: url("../imgs/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-main {
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-weather-description {
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 5.5%,
+    rgba(255, 255, 255, 0.1) 94.75%
+  );
+  backdrop-filter: blur(20px);
+  color: var(--clr-white-regular);
+
+  padding: 6rem;
+}
+
+.temps-humidity-wind {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3rem;
+}
+
+.heading-h1 {
+  font-family: var(--ff-headings);
+  color: var(--clr-black);
+  display: inline-block;
+
+  font-size: 10rem;
+  line-height: 0.8;
+  font-weight: 500;
+}
+
+.main-weather-description {
+  min-height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-weather-description svg {
+  color: var(--clr-black);
+  width: 6rem;
+  height: 6rem;
+}
+
+.weather-desc-type {
+  font-size: 3rem;
+  color: var(--clr-black);
+  line-height: 0.8;
+}
+
+.temperatures-big {
+  display: flex;
+}
+
+.feels-like-value {
+  color: var(--clr-black);
+}
+
+.weather-desc-and-minmax {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.min-max {
+  display: flex;
+  gap: 1rem;
+}
+
+.max-temp,
+.min-temp {
+  color: var(--clr-black);
+}
+
+.divider {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.weather-desc-type-extended {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.forecast-days-weather {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.single-day-weather {
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 5.5%,
+    rgba(255, 255, 255, 0.1) 94.75%
+  );
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+
+  text-align: center;
+}
+
+.single-day-weather--info {
+  color: var(--clr-black);
+  font-weight: 700;
+}
